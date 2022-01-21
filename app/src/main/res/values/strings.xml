@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">TvShowCase</string>
+  <string name="search_in_name_and_description">Search in name and description case-sensitive</string>
+  <string name="search">Search</string>
+    <string name="no_of_filtered_episodes">Number of filtered episodes:</string>
+    <string name="select_an_episode">Tap on an episode from the list</string>
+</resources>
