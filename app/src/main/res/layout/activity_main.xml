@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".view.TVShowCaseActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/default_margin"
+        android:orientation="vertical"
+        app:layout_heightPercent="50%">
+
+        <AutoCompleteTextView
+            android:id="@+id/searchTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/search_in_name_and_description"
+            android:inputType="text"
+            android:minHeight="48dp" />
+
+        <Button
+            android:id="@+id/searchBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="filterListView"
+            android:text="@string/search" />
+
+        <ListView
+            android:id="@+id/listViewEpisodes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+    </LinearLayout>
+
+    <com.tvshowcase.mvc.view.EpisodeDetailsView
+        app:layout_marginTopPercent="55%"
+        app:layout_heightPercent="45%"
+        android:id="@+id/custom_display_view1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</android.support.percent.PercentRelativeLayout>
